@@ -6,7 +6,7 @@ describe('account', function() {
     it('should get somewhere...', function(done) {
         // init an account
 	var testAccount = Object.create(account);
-	testAccount.init('./test/wa-dbs/wa.db', './test/wa-dbs/msgstore.db', function loaded(err) {
+	testAccount.load('./test/wa-dbs/wa.db', './test/wa-dbs/msgstore.db', function loaded(err) {
 	    should.not.exist(err);
 	    done();
 	});
