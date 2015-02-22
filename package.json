@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/atask/squeeze",
   "dependencies": {
+    "async": "^0.9.0",
     "sqlite3": "^3.0.4",
     "string-template": "^0.2.0"
   },
