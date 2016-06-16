@@ -3,32 +3,27 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "bin": "cli.js",
   "scripts": {
-    "test": "mocha test || exit 0",
-    "eslint": "eslint lib test || exit 0"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "standard:lib": "standard lib/*.js"
   },
   "repository": {
     "type": "git",
     "url": "https://atask@github.com/atask/squeeze.git"
   },
-  "author": "atask",
-  "license": "WTFPL",
-  "bugs": {
-    "url": "https://github.com/atask/squeeze/issues"
-  },
-  "homepage": "https://github.com/atask/squeeze",
+  "author": "ᴉuᴉɥɔsɐʇ uɐllɐ <allan.taschini@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/atask/squeeze#readme",
   "dependencies": {
-    "async": "^0.9.0",
-    "bunyan": "^1.4.0",
-    "minimist": "^1.1.2",
-    "moment": "^2.10.6",
-    "sqlite3": "^3.0.4",
-    "string-template": "^0.2.0"
+    "async": "^2.0.0-rc.6",
+    "minimist": "^1.2.0",
+    "moment": "^2.13.0",
+    "sqlite3": "^3.1.4",
+    "string-template": "^1.0.0"
   },
   "devDependencies": {
-    "chai": "^1.10.0",
-    "debug": "^2.1.1",
-    "eslint": "^0.11.0",
-    "mocha": "^2.1.0"
+    "debug": "^2.2.0",
+    "standard": "^7.0.1"
   }
 }
