@@ -10,21 +10,21 @@ const MSGSTORE_DB_OPT = 'msgstore'
 let options = {}
 
 if (argv.d) {
-  options.day = moment(argv.s, 'YYYY-MM-DD')
+  options.targetDayString = argv.d
 } else if (argv[TARGET_DATE_OPT]) {
-  options.day = moment(argv[START_DATE_OPT], 'YYYY-MM-DD')
+  options.targetDayString = argv[TARGET_DATE_OPT]
 }
 
 if (argv.w) {
-  options.wa = argv.w
+  options.waPath = argv.w
 } else if (argv[WA_DB_OPT]) {
-  options.wa = argv[WA_DB_OPT]
+  options.waPath = argv[WA_DB_OPT]
 }
 
 if (argv.m) {
-  options.msgstore = argv.m
+  options.msgstorePath = argv.m
 } else if (argv[MSGSTORE_DB_OPT]) {
-  options.msgstore = argv[MSGSTORE_DB_OPT]
+  options.msgstorePath = argv[MSGSTORE_DB_OPT]
 }
 
 snapshot.createSnapshot(options, (err, res) => {
@@ -32,6 +32,6 @@ snapshot.createSnapshot(options, (err, res) => {
     console.log('ERROR...')
     porcess.exit(1)
   }
-  console.log(JSON.stringify(res))
+  console.log(JSON.stringify(res, null, 2))
   process.exit()
 })
