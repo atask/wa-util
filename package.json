@@ -1,5 +1,5 @@
 {
-  "name": "squeeze",
+  "name": "wa-snap",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://atask@github.com/atask/squeeze.git"
+    "url": "https://atask@github.com/atask/wa-snap.git"
   },
   "author": "ᴉuᴉɥɔsɐʇ uɐllɐ <allan.taschini@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/atask/squeeze#readme",
+  "homepage": "https://github.com/atask/wa-snap#readme",
   "dependencies": {
     "async": "^2.0.0-rc.6",
     "minimist": "^1.2.0",
