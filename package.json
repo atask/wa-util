@@ -17,6 +17,7 @@
   "homepage": "https://github.com/atask/wa-snap#readme",
   "dependencies": {
     "async": "^2.0.0-rc.6",
+    "common-tags": "^1.3.0",
     "minimist": "^1.2.0",
     "moment": "^2.13.0",
     "sqlite3": "^3.1.4",
