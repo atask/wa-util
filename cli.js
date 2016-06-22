@@ -1,6 +1,5 @@
 const snapshot = require('./lib/snapshot')
 const argv = require('minimist')(process.argv.slice(2))
-const moment = require('moment')
 const stripIndent = require('common-tags').stripIndent
 
 const TARGET_DATE = {
@@ -32,6 +31,7 @@ if ([targetDayString, waPath, msgstorePath].includes(undefined)) {
   `)
   process.exitCode = 64
 } else {
+  let options = { targetDayString, waPath, msgstorePath }
   snapshot.createSnapshot(options, (err, res) => {
     if (err) {
       console.log('ERROR...')
