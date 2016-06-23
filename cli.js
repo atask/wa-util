@@ -32,12 +32,12 @@ if ([targetDayString, waPath, msgstorePath].includes(undefined)) {
   process.exitCode = 64
 } else {
   let options = { targetDayString, waPath, msgstorePath }
-  snapshot.createSnapshot(options, (err, res) => {
-    if (err) {
-      console.log('ERROR...')
+  snapshot.createSnapshot(options)
+    .then(res => {
+      console.log(JSON.stringify(res, null, 2))
+    })
+    .catch(err => {
+      console.log(JSON.stringify(err, null, 2))
       process.exitCode = 1
-    }
-    console.log(JSON.stringify(res, null, 2))
-    process.exit()
-  })
+    })
 }
