@@ -1,6 +1,6 @@
 {
   "name": "wa-snap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A basic CLI util for dumping daily data from a WhatsApp database",
   "author": "ᴉuᴉɥɔsɐʇ uɐllɐ <allan.taschini@gmail.com>",
   "bin": "cli.js",
