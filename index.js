@@ -1,11 +1,11 @@
 'use strict'
 
-const account = require('./lib/account')
-const message = require('./lib/message')
 const contact = require('./lib/contact')
+const message = require('./lib/message')
+const snapshot = require('./lib/snapshot')
 
 module.exports = {
-  account,
+  contact,
   message,
-  contact
+  snapshot
 }
