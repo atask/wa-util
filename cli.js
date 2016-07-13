@@ -62,14 +62,13 @@ function printHelp () {
   `)
 }
 
-let invalidMediaOpt = mediaFlag && [targetDayString, msgstorePath].includes(undefined)
-let invalidSnapshotOpt = !mediaFlag && [targetDayString, waPath, msgstorePath].includes(undefined)
+let invalidOpt = [targetDayString, waPath, msgstorePath].includes(undefined)
+let options = { targetDayString, waPath, msgstorePath }
 
-if (help || invalidMediaOpt || invalidSnapshotOpt) {
+if (help || invalidOpt) {
   printHelp()
   process.exitCode = 64
 } else if (mediaFlag) {
-  let options = { targetDayString, msgstorePath }
   snapshot.getMedia(options)
     .then(res => {
       console.log(JSON.stringify(res, null, 2))
@@ -79,8 +78,7 @@ if (help || invalidMediaOpt || invalidSnapshotOpt) {
       process.exitCode = 1
     })
 } else {
-  let options = { targetDayString, waPath, msgstorePath }
-  snapshot.createSnapshot(options)
+  snapshot.parseWaDb(options)
     .then(res => {
       console.log(JSON.stringify(res, null, 2))
     })
