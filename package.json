@@ -1,11 +1,11 @@
 {
-  "name": "wa-snap",
-  "version": "0.4.0",
+  "name": "wa-util",
+  "version": "0.5.0",
   "description": "Basic CLI utils for dumping daily data from a WhatsApp database",
   "author": "ᴉuᴉɥɔsɐʇ uɐllɐ <allan.taschini@gmail.com>",
   "bin": {
-    "wa-snapp": "cli/wa-snap.js",
-    "wa-parse": "cli/wa-parse.js",
+    "wa-snap": "cli/wa-snap.js",
+    "wa-dump": "cli/wa-dump.js",
     "wa-media": "cli/wa-media.js"
   },
   "scripts": {
@@ -18,12 +18,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://atask@github.com/atask/wa-snap.git"
+    "url": "https://atask@github.com/atask/wa-util.git"
   },
   "bugs": {
-    "url": "https://github.com/atask/wa-snap/issues"
+    "url": "https://github.com/atask/wa-util/issues"
   },
-  "homepage": "https://github.com/atask/wa-snap#readme",
+  "homepage": "https://github.com/atask/wa-util#readme",
   "keywords": [
     "whatsapp",
     "database",

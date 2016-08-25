@@ -2,10 +2,9 @@
 
 const contact = require('./lib/contact')
 const message = require('./lib/message')
-const snapshot = require('./lib/snapshot')
+const waUtil = require('./lib/wa-util')
 
-module.exports = {
-  contact,
-  message,
-  snapshot
-}
+waUtil.constact = contact
+waUtil.message = message
+
+module.exports = waUtil

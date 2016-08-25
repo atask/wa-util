@@ -21,7 +21,7 @@ const TARGET_DATE = {
 const WA_DB_DIR = {
   switch: 'w',
   opt: 'wa',
-  description: 'directory path containing msgstore.db and wa.db files'
+  description: 'directory path containing WhatsApp related files'
 }
 
 let help = argv[HELP.switch] || argv[HELP.opt]
