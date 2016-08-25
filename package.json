@@ -1,7 +1,7 @@
 {
   "name": "wa-snap",
   "version": "0.4.0",
-  "description": "A basic CLI util for dumping daily data from a WhatsApp database",
+  "description": "Basic CLI utils for dumping daily data from a WhatsApp database",
   "author": "ᴉuᴉɥɔsɐʇ uɐllɐ <allan.taschini@gmail.com>",
   "bin": {
     "wa-snapp": "cli/wa-snap.js",
@@ -11,8 +11,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "standard:lib": "standard lib/*.js",
-    "standard:main": "standard index.js cli.js",
-    "standard": "npm run standard:main && npm run standard:lib"
+    "standard:main": "standard index.js",
+    "standard:cli": "standard cli/*.js",
+    "standard": "npm run standard:main && npm run standard:lib && npm run standard:cli"
   },
   "main": "index.js",
   "repository": {

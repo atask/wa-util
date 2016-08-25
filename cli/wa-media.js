@@ -23,16 +23,10 @@ const WA_DB_DIR = {
   opt: 'wa',
   description: 'directory path containing msgstore.db and wa.db files'
 }
-const MEDIA_DIR = {
-  switch: 'm',
-  opt: 'media',
-  description: 'directory path containing media files'
-}
 
 let help = argv[HELP.switch] || argv[HELP.opt]
 let targetDayString = argv[TARGET_DATE.switch] || argv[TARGET_DATE.opt]
 let dbDir = argv[WA_DB_DIR.switch] || argv[WA_DB_DIR.opt]
-let mediaDir = argv[MEDIA_DIR.switch] || argv[MEDIA_DIR.opt]
 
 function printHelp () {
   console.log(stripIndent`
@@ -65,13 +59,13 @@ if (help) {
       console.log('Media files:')
       res.media.forEach(path => {
         console.log(`\t${path}`)
-      });
+      })
       console.log('')
       console.log('Active users profile images:')
       res.profileImages.forEach(profileImage => {
         console.log(`\t${profileImage.profilePicture}`)
         console.log(`\t${profileImage.avatar}`)
-      });
+      })
     })
     .catch(err => {
       console.error(err)
