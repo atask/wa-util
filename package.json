@@ -1,6 +1,6 @@
 {
   "name": "wa-util",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Basic CLI utils for dumping daily data from a WhatsApp database",
   "author": "ᴉuᴉɥɔsɐʇ uɐllɐ <allan.taschini@gmail.com>",
   "bin": {
