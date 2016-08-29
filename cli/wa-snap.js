@@ -2,7 +2,7 @@
 'use strict'
 
 const waUtil = require('../lib/wa-util')
-const waDbLoad = require('../lib/wa-db-load')
+const waDbLoadDir = require('../lib/wa-db-load').waDbLoadDir
 const snapFsSave = require('../lib/snap-fs-save')
 const argv = require('minimist')(process.argv.slice(2))
 const stripIndent = require('common-tags').stripIndent
@@ -60,7 +60,7 @@ if (help) {
   printHelp()
 } else {
   // create wa data load function
-  let waLoad = waDbLoad.bind(null, {dbDir, targetDayString})
+  let waLoad = waDbLoadDir.bind(null, {dbDir, targetDayString})
 
   // create snap save function
   let snapSave = snapFsSave.bind(null, {

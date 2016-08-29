@@ -8,7 +8,8 @@ const snapFsSave = require('./lib/snap-fs-save')
 
 waUtil.constact = contact
 waUtil.message = message
-waUtil.loadWaFromDb = waDbLoad
+waUtil.loadWaFromDbs = waDbLoad.waDbLoad
+waUtil.loadWaFromDir = waDbLoad.waDbLoadDir
 waUtil.saveDataToFs = snapFsSave
 
 module.exports = waUtil
