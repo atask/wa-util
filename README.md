@@ -25,7 +25,7 @@ $ wa-snap --help
   A basic CLI utility for snapshotting daily data from a WhatsApp database.
 
   Version
-    0.4.1
+    0.6.0
 
   Usage
     wa-snap <options>
@@ -46,7 +46,7 @@ $ wa-dump --help
   A basic CLI utility for dumping daily data from a WhatsApp database.
 
   Version
-    0.4.1
+    0.6.0
 
   Usage
     wa-dump <options>
@@ -66,7 +66,7 @@ $ wa-media --help
   List paths of media exchanged in a specific day of a WhatsApp database.
 
   Version
-    0.4.1
+    0.6.0
 
   Usage
     wa-media <options>
